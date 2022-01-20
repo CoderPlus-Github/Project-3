@@ -1,0 +1,316 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+  --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+  filter: invert(2);
+  margin: 10px 34px;
+}
+
+#logo img {
+  height: 45px;
+  margin: 3px 6px;
+}
+
+/* Navigation Bar: List Styling */
+
+#ul2 {
+  display: none;
+}
+
+#navbar #ul1 {
+  display: flex;
+  font-family: "Titillium Web", sans-serif;
+}
+
+#navbar #ul1 li {
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+#navbar #ul1 li a {
+  color: white;
+  display: block;
+  padding: 2px 22px;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+#navbar #ul1 li a:hover {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#navbar #ul2  {
+  display: flex;
+  font-family: "Titillium Web", sans-serif;
+}
+
+#navbar #ul2 li {
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+#navbar #ul2 li a {
+  color: white;
+  display: block;
+  padding: 2px 22px;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+#navbar #ul2 li a img{
+  display: inline-block;
+}
+
+#navbar #ul2 li a img:hover {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 440px;
+  justify-content: center;
+  align-items: center;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  background: url("../Images/Background/chopping-board-surrounded-with-vegetables-eggs-rice-grains-desk.jpg")
+    no-repeat center center/cover;
+  height: 500px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+
+#home h1 {
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+}
+/* Services Section */
+#services {
+  margin: 30px;
+  display: flex;
+}
+#services .box {
+  border: 1px solid rgb(204, 204, 204);
+  border-top: 25px solid rgb(204, 204, 204);
+  background-color: rgb(253, 253, 253);
+  border-radius: 25px;
+  align-items: center;
+  text-align: center;
+  padding: 34px;
+  margin: 2px 20px;
+  border-radius: 28px;
+  background: #ffffff;
+  margin-bottom: 20px;
+  transition: all 0.25s;
+}
+
+#services .box:hover {
+  box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.2),
+    0 12px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+#services .box img {
+  height: 160px;
+  margin: auto;
+  display: block;
+}
+
+#services .box h2 {
+  font-family: "Kanit", sans-serif;
+}
+
+#services .box p {
+  font-family: "Titillium Web", sans-serif;
+}
+
+/* Clients Section */
+#client-container {
+  position: relative;
+  padding: 20px;
+}
+
+#client-container::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: rgb(221, 221, 221);
+  z-index: -1;
+  opacity: 0.89;
+}
+
+#client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#client .img3 {
+  width: 80px;
+  padding: 3px 20px;
+}
+
+#client .img3::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: rgb(221, 221, 221);
+  z-index: -1;
+}
+
+/* Contact Section */
+#contact {
+  position: relative;
+  margin: 20px 0px;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.8;
+  background: url("../Images/Background/cookies-2991174_1920.jpg") no-repeat center center/cover;
+}
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea {
+  /* color: white; */
+  /* background: none; */
+  border: 2px solid black;
+  margin: 10px 0px;
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  transition: all 0.25s;
+}
+
+#contact-box input:focus,
+#contact-box textarea:focus {
+ padding: 10px 10px ;
+}
+
+#contact-box form {
+  width: 40%;
+}
+
+footer {
+  font-family: "Titillium Web", sans-serif;
+  background: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+footer div {
+  margin: 10px 0px;
+  text-align: center;
+  align-items: center;
+}
+
+footer h3 {
+  font-family: "Kanit", sans-serif;
+}
+
+footer img {
+  margin: 5px 3px;
+  width: 150px;
+}
+
+/* Utility Classes */
+.h-primary {
+  font-size: 3.8rem;
+  padding: 6px;
+}
+
+.h-secondary {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.3rem;
+  padding: 10px;
+}
+
+.btn {
+  margin-top: 10px;
+  width: 120px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 8px;
+  background: none;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: all 0.25s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  width: 130px;
+  height: 50px;
+  font-size: 17px;
+}
+
+.center {
+  text-align: center;
+}
